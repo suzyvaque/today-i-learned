@@ -18,7 +18,7 @@ import numpy as np
 
 
 class PositionalEncoding(tf.keras.layers.Layer):
-    def __init__(self, d_hid, n_position=200):
+    def __init__(self, d_hid, n_position):
         super(PositionalEncoding, self).__init__()
 
         # Not a parameter
@@ -50,7 +50,7 @@ Sample Input Below
 
 
 batch_size = 30 # number of sentences
-n_position = 500  # number of words in sentence
+n_position = 500  # number of words in sentence - to be accurate, max length of sequence for input
 d_hid = 16 # word encoding vector size
 pos_enc = PositionalEncoding(d_hid, n_position)
 
