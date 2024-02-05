@@ -3,7 +3,7 @@
 
 * sinusodial
 
-* original code : jadore801120/attention-is-all-you-need-pytorch/transformer/Models.py
+* original code : https://github.com/jadore801120/attention-is-all-you-need-pytorch/blob/master/transformer/Models.py
 
 * modifications :
   1. torch based converted to tf based
