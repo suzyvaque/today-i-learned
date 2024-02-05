@@ -1,0 +1,25 @@
+# Tensorflow
+# How to apply
+
+import numpy as np
+import tensorflow as tf
+
+
+
+# Given input data "input"...
+# input.shape = (#sentences, #words in sentence, #dim of vector for word)
+
+
+
+max_sequence_length = input.shape[1]  # maximum sequence length
+embedding_dimension = input.shape[-1]  # embedding dimension
+
+
+# Create the PositionEmbedding layer
+position_embedding_layer = PositionEmbedding(
+    max_length=max_sequence_length,
+    seq_axis=1,
+)
+
+# Apply positional encoding
+pos_encoded_data = position_embedding_layer(input)
