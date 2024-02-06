@@ -13,11 +13,16 @@
  
 -----
 
+
 https://heekangpark.github.io/ml-shorts/positional-encoding-vs-positional-embedding
+
 Method 2 and 3 should be integrated as a layer of a trainable model.
+
 Should modify code!
 
+
 -----
+
 
 ### Method2. Keras NLP
 
