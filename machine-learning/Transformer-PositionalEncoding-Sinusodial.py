@@ -43,7 +43,10 @@ class PositionalEncoding(tf.keras.layers.Layer):
         # return tf.expand_dims(sinusoid_table, axis=0)
 
     def call(self, x):
-        return x + self.pos_table[:, :x.shape[1]]
+        return x + self.pos_table[:,:]
+        # originally return x + self.pos_table[:, :x.shape[1]]
+        # all rows(d_hid fixed for all words)
+        # columns that do not exceed x's column numbers (n_position is a max length of sentence)
 
 
 
@@ -59,9 +62,10 @@ d_hid = 16 # word encoding vector size
 pos_enc = PositionalEncoding(d_hid, n_position)
 
 for i in range(batch_size):
-  input_tensor = tf.random.normal((n_position, d_hid))  # Example input with n_position words, each represented by a d_hid-sized vector
-  output_tensor = pos_enc(input_tensor)
+    input_tensor = tf.random.normal((n_position, d_hid))  # Example input with n_position words, each represented by a d_hid-sized vector
+    output_tensor = pos_enc(input_tensor)
 
-  print('\n\n\n#', i)
-  print(input_tensor)
-  print(output_tensor)
+    print('\n\n\n#', i)
+    print(input_tensor)
+    print()
+    print(output_tensor)
