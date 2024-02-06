@@ -14,6 +14,9 @@
 -----
 
 
+## Positional Encoding vs Positional Embedding
+
+
 https://heekangpark.github.io/ml-shorts/positional-encoding-vs-positional-embedding
 
 Method 2 and 3 should be integrated as a layer of a trainable model.
