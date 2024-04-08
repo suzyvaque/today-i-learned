@@ -9,7 +9,8 @@ n, m = map(int, input().split())
 board = [list(input()) for _ in range(n)]
 
 # if set to 0, min_count will always be 0
-min_count = n * m
+# DON'T min_count = n*m bro...
+min_count = 64
 
 for topleft_row in range(n-7):
     for topleft_col in range(m-7):
