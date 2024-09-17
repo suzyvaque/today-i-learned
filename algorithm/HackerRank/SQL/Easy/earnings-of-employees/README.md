@@ -1,4 +1,4 @@
-# Earnings of Employees
+# Top Earners
 
 Skills: SQL (Basic)
 
