@@ -1,4 +1,4 @@
-# Solve SQL | Placements
+# Placements
 
 Skills: SQL (Intermediate)
 
