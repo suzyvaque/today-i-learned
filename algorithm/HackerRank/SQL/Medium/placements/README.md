@@ -1,7 +1,9 @@
 # Solve SQL | Placements
 
-Difficulty Medium
+Skills: SQL (Intermediate)
 
-SQL (Intermediate)
+Difficulty: Medium
+
+Subdomains: Advanced Join
 
 [Link](https://www.hackerrank.com/challenges/placements)
