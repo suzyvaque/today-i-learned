@@ -1,1 +1,1 @@
-[Link] (https://www.hackerrank.com/challenges/placements)
+[Link](https://www.hackerrank.com/challenges/placements)
